@@ -1,12 +1,11 @@
 <template>
-  <v-container fluid>
+  <div>
     <BuscarIp />
-    <hello-world v-if="false" />
-  </v-container>
+  </div>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
+// import HelloWorld from "../components/HelloWorld";
 import BuscarIp from "@/views/BuscaIp/BuscarIp";
 
 export default {
@@ -14,7 +13,7 @@ export default {
 
   components: {
     BuscarIp,
-    HelloWorld,
+    // HelloWorld,
   },
 };
 </script>

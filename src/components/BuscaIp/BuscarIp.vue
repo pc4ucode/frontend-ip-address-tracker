@@ -20,25 +20,28 @@
           </v-col>
           <v-col cols="12">
             <v-card class="mx-auto" max-width="980" outlined>
-              <v-row>
-                <v-col cols="3" class="border-right">
+              <v-row class="py-7 px-5">
+                <v-col cols="3">
                   <div class="text-overline mb-4">IP ADDRESS</div>
                   <v-list-item-title class="text-h5 mb-1">
                     192.212.174.101
                   </v-list-item-title>
                 </v-col>
-                <v-col cols="3" class="border-right">
+                <v-divider vertical />
+                <v-col cols="3">
                   <div class="text-overline mb-4">LOCATION</div>
                   <v-list-item-title class="text-h5 mb-1">
                     Brooklyn, NY 10001
                   </v-list-item-title>
                 </v-col>
-                <v-col cols="3" class="border-right">
+                <v-divider vertical />
+                <v-col cols="3">
                   <div class="text-overline mb-4">TIMEZONE</div>
                   <v-list-item-title class="text-h5 mb-1">
                     UTC-05:00
                   </v-list-item-title>
                 </v-col>
+                <v-divider vertical />
                 <v-col cols="3">
                   <div class="text-overline mb-4">ISP</div>
                   <v-list-item-title class="text-h5 mb-1">

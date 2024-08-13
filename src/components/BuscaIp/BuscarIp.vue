@@ -13,13 +13,16 @@
               <v-text-field
                 solo
                 label="Search for any IP address or domain"
-                append-outer-icon="mdi-map-marker"
-                style="max-width: 50%"
-              ></v-text-field>
+                append-icon="mdi-arrow-right-bold-box"
+                style="max-width: 25%"
+                v-model="searchInput"
+                @click:append="searchIpAddress()"
+              >
+              </v-text-field>
             </div>
           </v-col>
           <v-col cols="12">
-            <v-card class="mx-auto" max-width="980" outlined>
+            <v-card class="mx-auto mb-4" max-width="980" outlined>
               <v-row class="py-7 px-5">
                 <v-col cols="3">
                   <div class="text-overline mb-4">IP ADDRESS</div>
@@ -60,6 +63,14 @@
 <script>
 export default {
   name: "BuscarIp",
+  data: () => ({
+    searchInput: "",
+  }),
+  methods: {
+    searchIpAddress() {
+      console.log("teste function", this.searchInput);
+    },
+  },
 };
 </script>
 
